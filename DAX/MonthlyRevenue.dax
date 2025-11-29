@@ -1,0 +1,5 @@
+Monthly Revenue =
+CALCULATE(
+    [Total Revenue],
+    ALLEXCEPT(ecommerce_sales, ecommerce_sales[order_month])
+)
