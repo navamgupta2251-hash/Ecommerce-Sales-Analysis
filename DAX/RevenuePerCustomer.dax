@@ -1,0 +1,5 @@
+Revenue Per Customer =
+DIVIDE(
+    [Total Revenue],
+    DISTINCTCOUNT(ecommerce_sales[customer_id])
+)
