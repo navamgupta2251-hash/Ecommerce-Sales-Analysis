@@ -1,0 +1,1 @@
+Total Orders = COUNT(ecommerce_sales[order_id])
