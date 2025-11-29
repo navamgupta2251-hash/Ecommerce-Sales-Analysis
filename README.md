@@ -25,10 +25,6 @@ Repository Structure
 
 Tools Used
 
-How to Use This Project
-
-License
-
 📊 Project Overview
 
 This project explores the sales and operational performance of an e-commerce business.
