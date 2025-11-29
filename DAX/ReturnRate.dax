@@ -1,0 +1,5 @@
+Return Rate =
+DIVIDE(
+    SUM(ecommerce_sales[returned_flag]),
+    [Total Orders]
+)
