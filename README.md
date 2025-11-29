@@ -5,63 +5,67 @@ Final deliverable: a 2-page interactive Power BI report with KPIs, breakdown vis
 
 📌 Table of Contents
 
-Project Overview
+--Project Overview
 
-Dashboard Pages
+--Dashboard Pages
 
-Features
+--Features
 
-Dataset
+--Dataset
 
-Data Cleaning & Preparation
+--Data Cleaning & Preparation
 
-DAX Measures
+--DAX Measures
 
-Key Insights
+--Key Insights
 
-Recommendations
+--Recommendations
 
-Repository Structure
+--Repository Structure
 
-Tools Used
+--Tools Used
+
+--How to Use This Project
+
+--License
 
 📊 Project Overview
 
 This project explores the sales and operational performance of an e-commerce business.
 The dashboard helps answer questions like:
 
-How are revenue and orders trending over time?
+-How are revenue and orders trending over time?
 
-Which categories and regions generate the most profit?
+-Which categories and regions generate the most profit?
 
-What customer demographics drive sales?
+-What customer demographics drive sales?
 
-Which products have the highest return rate and why?
+-Which products have the highest return rate and why?
 
-Do delivery delays influence returns?
+-Do delivery delays influence returns?
 
-The report is designed for data analysts, business managers, and stakeholders who want quick, actionable insights.
+-The report is designed for data analysts, business managers, and stakeholders who want quick, actionable insights.
 
 📈 Dashboard Pages
 1️⃣ KPI Summary Page
 
 Visual summary of key business metrics such as:
 
-Total Revenue
+-Total Revenue
 
-Total Profit
+-Total Profit
 
-Total Orders
+-Total Orders
 
-Return Rate
+-Return Rate
 
-Profit Margin %
+-Profit Margin %
 
-Avg Delivery Days
+-Avg Delivery Days
 
-Revenue per Customer
+-Revenue per Customer
 
-Monthly Revenue
+-Monthly Revenue
 
 🔍 Preview
 
@@ -69,19 +73,19 @@ Monthly Revenue
 
 Interactive visuals to explore:
 
-Revenue Over Time
+-Revenue Over Time
 
-Orders Over Time
+-Orders Over Time
 
-Revenue by Category
+-Revenue by Category
 
-Revenue by Region
+-Revenue by Region
 
-Revenue by Customer Age
+-Revenue by Customer Age
 
-Return Rate by Category
+-Return Rate by Category
 
-Detailed Transaction Table
+-Detailed Transaction Table
 
 🔍 Preview
 
@@ -128,41 +132,41 @@ You can find the dataset in:
 
 🧹 Data Cleaning & Preparation
 
-Performed using SQL + Power BI:
+1)Performed using SQL + Power BI:
 
-Removed invalid rows (missing IDs, negative quantity)
+2)Removed invalid rows (missing IDs, negative quantity)
 
-Standardized date formats
+3)Standardized date formats
 
-Created derived columns: revenue, order_month, returned_flag
+4)Created derived columns: revenue, order_month, returned_flag
 
-Normalized discount values
+5)Normalized discount values
 
-Validated totals between SQL & Power BI
+6)Validated totals between SQL & Power BI
 
-Created delivery performance groups
+7)Created delivery performance groups
 
 🧮 DAX Measures
 
 Below are some of the main DAX measures used:
 
-Total Revenue = SUM(ecommerce_sales[revenue])
+1)Total Revenue = SUM(ecommerce_sales[revenue])
 
-Total Profit = SUM(ecommerce_sales[profit])
+2)Total Profit = SUM(ecommerce_sales[profit])
 
-Total Orders = COUNT(ecommerce_sales[order_id])
+3)Total Orders = COUNT(ecommerce_sales[order_id])
 
-AOV = DIVIDE([Total Revenue], [Total Orders])
+5)AOV = DIVIDE([Total Revenue], [Total Orders])
 
-Return Rate =
+6)Return Rate =
 DIVIDE(
     SUM(ecommerce_sales[returned_flag]),
     [Total Orders]
 )
 
-Profit Margin % = DIVIDE([Total Profit], [Total Revenue])
+7)Profit Margin % = DIVIDE([Total Profit], [Total Revenue])
 
-Avg Delivery Days = AVERAGE(ecommerce_sales[delivery_time_days])
+8)Avg Delivery Days = AVERAGE(ecommerce_sales[delivery_time_days])
 
 
 Full DAX collection is stored in:
@@ -213,14 +217,34 @@ Ecommerce-Sales-Analysis/
 
 🛠 Tools Used
 
-Power BI Desktop
+=Power BI Desktop
 
-SQL
+=SQL
 
-Excel
+=Excel
 
-DAX
+=DAX
 
-GitHub
+=GitHub
 
-Power Query
+=Power Query
+
+▶ How to Use This Project
+
+Download the repo or clone using:
+
+git clone https://github.com/navamgupta2251-hash/Ecommerce-Sales-Analysis
+
+
+Open Ecommerce Sales.pbix in Power BI Desktop.
+
+Explore dashboards using slicers.
+
+Review DAX formulas inside /DAX/.
+
+View screenshots inside /images/.
+
+📄 License
+
+This project is available under the MIT License.
+You may use the dashboard, code, and insights for learning or portfolio purposes.
