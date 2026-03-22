@@ -3,8 +3,7 @@
 ---
 
 ## 📌 Overview
-This project analyzes e-commerce sales data to identify drivers of performance and pinpoint inefficiencies.  
-The goal is to move beyond reporting and support better business decisions.
+The aim is to move beyond reporting and support better business decisions by identifying actionable insights and operational gaps.
 
 ---
 
@@ -59,18 +58,17 @@ Performed using **Power BI, SQL, and Power Query**:
 ---
 
 ## 🔍 Key Insights
-- Some regions underperform in revenue  
-- High returns exist in specific categories  
-- Delivery delays impact repeat purchases  
-- Few products drive most revenue  
+- Region-wise analysis shows clear performance gaps, with certain regions contributing significantly less to overall revenue, indicating potential demand or operational issues - High return rates are concentrated in specific product categories, suggesting possible issues with product quality, expectations, or descriptions  
+- Delivery delays are associated with reduced repeat purchases, indicating a direct impact on customer retention  
+- A small percentage of products contributes disproportionately to total revenue, highlighting dependency on key items  
 
 ---
 
 ## 💡 Recommendations
-- Improve logistics in delayed regions  
-- Reduce returns in specific categories  
-- Focus marketing on high-performing products  
-- Optimize inventory  
+- Investigate underperforming regions to identify whether issues are due to demand, pricing, or logistics, and apply targeted strategies accordingly  
+- Reduce return rates by improving product descriptions, quality checks, and aligning customer expectations  
+- Improve delivery timelines in affected regions to enhance customer satisfaction and retention  
+- Focus marketing and inventory efforts on high-performing products to maximize revenue impact   
 
 ---
 
@@ -98,5 +96,6 @@ Performed using **Power BI, SQL, and Power Query**:
 
 ---
 
-## ✅ Conclusion
-This project focuses on using data to support business decisions, not just reporting metrics.
+## 🚀 Key Takeaway
+This analysis shows that operational inefficiencies such as delivery delays and high return rates directly impact both revenue and customer retention. By addressing these areas and focusing on high-performing products and regions, the business can significantly improve performance and decision-making.
+
